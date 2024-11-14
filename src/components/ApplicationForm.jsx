@@ -79,30 +79,30 @@ const ApplicationForm = ({ onSubmit }) => {
                 <input type="text" name="forename" value={formData.forename} onChange={handleChange} className="input-field" required />
 
                 <label>Surname</label>
-                <input type="text" name="surname" value={formData.surname} onChange={handleChange} className="input-field" />
+                <input type="text" name="surname" value={formData.surname} onChange={handleChange} className="input-field" required />
 
                 <label>Date of Birth</label>
-                <input type="date" name="dob" value={formData.dob} onChange={handleChange} className="input-field" />
+                <input type="date" name="dob" value={formData.dob} onChange={handleChange} className="input-field" required/>
 
                 <label>National Insurance Number</label>
-                <input type="text" name="nationalInsurance" value={formData.nationalInsurance} onChange={handleChange} className="input-field" />
+                <input type="text" name="nationalInsurance" value={formData.nationalInsurance} onChange={handleChange} className="input-field" required/>
 
                 <label>Mobile Number</label>
-                <input type="text" name="mobile" value={formData.mobile} onChange={handleChange} className="input-field" />
+                <input type="text" name="mobile" value={formData.mobile} onChange={handleChange} className="input-field" required/>
 
                 <label>Address</label>
-                <textarea name="address" value={formData.address} onChange={handleChange} className="input-field"></textarea>
+                <textarea name="address" value={formData.address} onChange={handleChange} className="input-field" required></textarea>
 
                 <label>Next of Kin Address</label>
-                <textarea name="nextOfKinAddress" value={formData.nextOfKinAddress} onChange={handleChange} className="input-field"></textarea>
+                <textarea name="nextOfKinAddress" value={formData.nextOfKinAddress} onChange={handleChange} className="input-field" required></textarea>
 
                 <label>
-                    <input type="checkbox" name="terms" checked={formData.terms} onChange={handleChange} />
+                    <input type="checkbox" name="terms" checked={formData.terms} onChange={handleChange} required/>
                     I agree to the terms and conditions
                 </label>
 
                 <label>Upload Document</label>
-                <input type="file" name="documentPath" onChange={handleChange} className="input-field" />
+                <input type="file" name="documentPath" onChange={handleChange} className="input-field" required/>
             </div>
 
             <button type="submit" className="submit-button">Submit</button>
